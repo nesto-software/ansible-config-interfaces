@@ -4,8 +4,11 @@
 auto lo
 iface lo inet loopback
 
-# enable pluggin ethernet in and out
+# enable plugging ethernet in and out
 allow-hotplug eth0
+
+# enable plugging wlan in and out
+allow-hotplug wlan1
 
 # include the config which is writter by the backend
 source /etc/network/interfaces.d/*
